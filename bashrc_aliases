@@ -4,6 +4,7 @@
 mktar() { tar cvf  "${1%%/}.tar"     "${1%%/}/"; }
 mktgz() { tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"; }
 mktbz() { tar cvjf "${1%%/}.tar.bz2" "${1%%/}/"; }
+mkzip() { zip -r   "${1%%/}.zip"     "${1%%/}/"; }
 
 
 # Easy extract
@@ -73,7 +74,7 @@ alias updatedb='sudo updatedb'
 #alias a?='cat /home/will/.alias.help'
 #alias f?='cat /home/will/.function.help'
 #alias dn='OPTIONS=$(\ls -F | grep /$); select s in $OPTIONS; do cd $PWD/$s; break;done'
-#alias help='OPTIONS=$(\ls ~/.tips -F);select s in $OPTIONS; do less ~/.tips/$s; break;done' 
+#alias help='OPTIONS=$(\ls ~/.tips -F);select s in $OPTIONS; do less ~/.tips/$s; break;done'
 
 #Truecrypt
 #alias mtrue='sudo truecrypt /media/usbdisk/kestrel.tc ~/kestrel'
@@ -81,6 +82,7 @@ alias updatedb='sudo updatedb'
 
 #Rsync
 #alias usbb='rsync -avz /media/usbdisk/ ~/backup/usb/'
+
 
 #Timestamps
 alias stamp='date "+%Y%m%d%a%H%M"'
@@ -91,6 +93,7 @@ alias da='date "+%Y-%m-%d %A    %T %Z"'
 
 # search for a package
 alias search="apt-cache search"
+
 
 # empty trash
 alias trash="rm -fr ~/.Trash"

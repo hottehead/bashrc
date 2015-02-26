@@ -1,6 +1,3 @@
-A modular bashrc  configuration
-======
-
 A modular bashrc with install script.
 
 ## How to install?
