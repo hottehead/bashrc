@@ -70,6 +70,10 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 #Color the output of grep
 export GREP_COLOR='1;32;40'
 
+#VIM Editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
